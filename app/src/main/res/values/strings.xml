@@ -11,4 +11,7 @@
     <string name="to">to</string>
     <string name="max_cropped_size">Max cropped image size</string>
     <string name="resize_image">Resize image to max size</string>
+    <string name="width_image">Width</string>
+    <string name="height_image">Height</string>
+    <string name="compr_settings">Compression settings</string>
 </resources>

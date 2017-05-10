@@ -156,7 +156,7 @@
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
                     android:gravity="center"
-                    android:hint="Width"/>
+                    android:hint="@string/width_image"/>
 
                 <TextView
                     android:layout_width="wrap_content"
@@ -170,7 +170,7 @@
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
                     android:gravity="center"
-                    android:hint="Height"/>
+                    android:hint="@string/height_image"/>
 
             </LinearLayout>
 
@@ -184,7 +184,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center"
-                    android:text="Compression settings" />
+                    android:text="@string/compr_settings" />
 
             <RadioButton
                 android:id="@+id/jpegButton"
