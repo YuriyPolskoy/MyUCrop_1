@@ -8,8 +8,7 @@
 
     <FrameLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        >
+        android:layout_height="wrap_content">
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -33,7 +32,7 @@
                 android:textStyle="bold"/>
 
             <Button
-                android:id="@+id/button_pick_crop"
+                android:id="@+id/btn_pick_crop"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:backgroundTint="@color/colorAccent"
@@ -44,7 +43,7 @@
                 android:textStyle="bold" />
 
             <Button
-                android:id="@+id/button"
+                android:id="@+id/btn_rand_image"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:backgroundTint="@color/colorAccent"
@@ -55,7 +54,7 @@
                 android:textStyle="bold"/>
 
             <RadioButton
-                android:id="@+id/radioButton"
+                android:id="@+id/btn_img_src"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:textAppearance="?android:textAppearanceMedium"
@@ -82,7 +81,7 @@
                 android:text="@string/freestyle_crop" />
 
             <RadioButton
-                android:id="@+id/dynamicButton"
+                android:id="@+id/btn_dynamic"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:textAppearance="?android:textAppearanceMedium"
@@ -90,7 +89,7 @@
                 tools:checked="true"/>
 
             <RadioButton
-                android:id="@+id/squareButton"
+                android:id="@+id/btn_square"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:textAppearance="?android:textAppearanceMedium"
