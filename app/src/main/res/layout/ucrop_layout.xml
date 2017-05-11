@@ -194,14 +194,16 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:textAppearance="?android:textAppearanceMedium"
-                android:text="JPEG" />
+                android:text="JPEG"
+                tools:ignore="HardcodedText"/>
 
             <RadioButton
                 android:id="@+id/pngButton"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:textAppearance="?android:textAppearanceMedium"
-                android:text="PNG" />
+                android:text="PNG"
+                tools:ignore="HardcodedText"/>
 
         </LinearLayout>
     </FrameLayout>
