@@ -21,4 +21,6 @@
     <string name="dnm_btn_prs">Dynamic button pressed</string>
     <string name="square_btn_pressed">Square btn has pressed</string>
     <string name="format_quality">Quality: %d</string>
+    <string name="ui">UI</string>
+    <string name="hide_ui_controls">Hide bottom UI controls</string>
 </resources>

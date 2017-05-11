@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<ScrollView
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
@@ -14,13 +13,13 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
-            android:orientation="vertical"
             android:layout_marginBottom="16dp"
             android:layout_marginLeft="16dp"
             android:layout_marginRight="16dp"
             android:layout_marginTop="16dp"
-            android:padding="10dp"
-            android:background="@drawable/back_rectangle">
+            android:background="@drawable/back_rectangle"
+            android:orientation="vertical"
+            android:padding="10dp">
 
             <TextView
                 android:layout_width="wrap_content"
@@ -29,7 +28,7 @@
                 android:text="@string/ucrop_name"
                 android:textColor="@color/colorAccent"
                 android:textSize="42sp"
-                android:textStyle="bold"/>
+                android:textStyle="bold" />
 
             <Button
                 android:id="@+id/btn_pick_crop"
@@ -51,85 +50,93 @@
                 android:textAllCaps="true"
                 android:textAppearance="?android:textAppearanceMedium"
                 android:textColor="@android:color/white"
-                android:textStyle="bold"/>
+                android:textStyle="bold" />
 
             <RadioButton
                 android:id="@+id/btn_img_src"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:textAppearance="?android:textAppearanceMedium"
-                android:text="@string/image_source" />
+                android:text="@string/image_source"
+                android:textAppearance="?android:textAppearanceMedium" />
 
             <View
                 android:layout_width="match_parent"
                 android:layout_height="1dp"
                 android:layout_margin="5dp"
-                android:background="@color/colorAccent"/>
+                android:background="@color/colorAccent" />
 
-            <TextView
-                android:id="@+id/textView"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_gravity="center"
-                android:text="@string/aspect_ratio" />
-
-            <CheckBox
-                android:id="@+id/freestyleCrop"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:textAppearance="?android:textAppearanceMedium"
-                android:text="@string/freestyle_crop" />
-
-            <RadioButton
-                android:id="@+id/btn_dynamic"
+            <RadioGroup
+                android:id="@+id/radio_group_ratio"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:textAppearance="?android:textAppearanceMedium"
-                android:text="@string/dynamicButton"
-                tools:checked="true"/>
-
-            <RadioButton
-                android:id="@+id/btn_square"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:textAppearance="?android:textAppearanceMedium"
-                android:text="@string/squareButton" />
-
-            <LinearLayout
-                android:layout_width="140dp"
-                android:layout_height="wrap_content"
-                android:orientation="horizontal">
-
-                <EditText
-                    android:id="@+id/ratio_x"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:gravity="center"
-                    android:layout_weight="1"
-                    android:inputType="numberDecimal"
-                    android:hint="x"/>
+                android:layout_height="wrap_content">
 
                 <TextView
+                    android:id="@+id/textView"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="@string/to"/>
+                    android:layout_gravity="center"
+                    android:text="@string/aspect_ratio" />
 
-                <EditText
-                    android:id="@+id/ratio_y"
+                <CheckBox
+                    android:id="@+id/freestyleCrop"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:gravity="center"
-                    android:layout_weight="1"
-                    android:inputType="numberDecimal"
-                    android:hint="y"/>
+                    android:text="@string/freestyle_crop"
+                    android:textAppearance="?android:textAppearanceMedium" />
 
-            </LinearLayout>
+                <RadioButton
+                    android:id="@+id/btn_dynamic"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/dynamicButton"
+                    android:textAppearance="?android:textAppearanceMedium"
+                    tools:checked="true" />
+
+                <RadioButton
+                    android:id="@+id/btn_square"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/squareButton"
+                    android:textAppearance="?android:textAppearanceMedium" />
+
+                <LinearLayout
+                    android:layout_width="140dp"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <EditText
+                        android:id="@+id/ratio_x"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:hint="x"
+                        android:inputType="numberDecimal" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/to" />
+
+                    <EditText
+                        android:id="@+id/ratio_y"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:hint="y"
+                        android:inputType="numberDecimal" />
+
+                </LinearLayout>
+
+            </RadioGroup>
+
 
             <View
                 android:layout_width="match_parent"
                 android:layout_height="1dp"
                 android:layout_margin="5dp"
-                android:background="@color/colorAccent"/>
+                android:background="@color/colorAccent" />
 
             <TextView
                 android:id="@+id/textView2"
@@ -143,7 +150,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="@string/resize_image"
-                android:textAppearance="?android:textAppearanceMedium"/>
+                android:textAppearance="?android:textAppearanceMedium" />
 
             <LinearLayout
                 android:layout_width="match_parent"
@@ -157,7 +164,7 @@
                     android:layout_weight="1"
                     android:gravity="center"
                     android:hint="@string/width_image"
-                    android:inputType="number"/>
+                    android:inputType="number" />
 
                 <TextView
                     android:layout_width="wrap_content"
@@ -172,50 +179,78 @@
                     android:layout_weight="1"
                     android:gravity="center"
                     android:hint="@string/height_image"
-                    android:inputType="number"/>
+                    android:inputType="number" />
 
             </LinearLayout>
 
-                <View
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_margin="5dp"
+                android:background="@color/colorAccent" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="@string/compr_settings" />
+
+            <RadioGroup
+                android:id="@+id/radio_group_compress"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <RadioButton
+                    android:id="@+id/jpegButton"
                     android:layout_width="match_parent"
-                    android:layout_height="1dp"
-                    android:layout_margin="5dp"
-                    android:background="@color/colorAccent"/>
-
-                <TextView
-                    android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_gravity="center"
-                    android:text="@string/compr_settings" />
+                    android:text="JPEG"
+                    android:textAppearance="?android:textAppearanceMedium"
+                    tools:ignore="HardcodedText" />
 
-            <RadioButton
-                android:id="@+id/jpegButton"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:textAppearance="?android:textAppearanceMedium"
-                android:text="JPEG"
-                tools:ignore="HardcodedText"/>
+                <RadioButton
+                    android:id="@+id/pngButton"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="PNG"
+                    android:textAppearance="?android:textAppearanceMedium"
+                    tools:ignore="HardcodedText" />
 
-            <RadioButton
-                android:id="@+id/pngButton"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:textAppearance="?android:textAppearanceMedium"
-                android:text="PNG"
-                tools:ignore="HardcodedText"/>
+            </RadioGroup>
 
             <TextView
                 android:id="@+id/text_quality"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
-                tools:text="@string/format_quality"/>
+                tools:text="@string/format_quality" />
 
             <SeekBar
                 android:id="@+id/seekbar_quality"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                tools:progress="90"/>
+                tools:progress="90" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_margin="5dp"
+                android:background="@color/colorAccent" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="UI">
+
+            <CheckBox
+                android:id="@+id/hide_ui"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/hide_ui_controls"
+                android:textAppearance="?android:textAppearanceMedium" />
+
+
         </LinearLayout>
     </FrameLayout>
 </ScrollView>
