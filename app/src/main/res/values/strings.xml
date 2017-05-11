@@ -14,4 +14,10 @@
     <string name="width_image">Width</string>
     <string name="height_image">Height</string>
     <string name="compr_settings">Compression settings</string>
+    <string name="picked_crop">now we picked crop</string>
+    <string name="rand_crop">Random image crop</string>
+    <string name="press_img_src">you\'ve pressed Image source</string>
+    <string name="picked_crop_btn">We picked freestyle crop</string>
+    <string name="dnm_btn_prs">Dynamic button pressed</string>
+    <string name="square_btn_pressed">Square btn has pressed</string>
 </resources>
