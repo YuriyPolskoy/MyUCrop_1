@@ -20,4 +20,5 @@
     <string name="picked_crop_btn">We picked freestyle crop</string>
     <string name="dnm_btn_prs">Dynamic button pressed</string>
     <string name="square_btn_pressed">Square btn has pressed</string>
+    <string name="format_quality">Quality: %d</string>
 </resources>

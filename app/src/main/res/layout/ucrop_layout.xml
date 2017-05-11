@@ -204,6 +204,18 @@
                 android:text="PNG"
                 tools:ignore="HardcodedText"/>
 
+            <TextView
+                android:id="@+id/text_quality"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                tools:text="@string/format_quality"/>
+
+            <SeekBar
+                android:id="@+id/seekbar_quality"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                tools:progress="90"/>
         </LinearLayout>
     </FrameLayout>
 </ScrollView>
